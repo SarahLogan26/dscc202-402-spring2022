@@ -146,22 +146,6 @@ X_train, X_test, y_train, y_test = train_test_split(airbnbDF.drop(["price"], axi
 
 # COMMAND ----------
 
-# Columns with missing values: zip, bathrooms, beds, review_scores_rating, review_scores_accuracy, review_scores_cleanliness, review_scores_checkin, review_scores_communication, review_scores_location , review_scores_value 
-
-# Remove rows with missing values in zipcode, bathrooms, beds columns
-# airbnbDF = airbnbDF.dropna(subset=['zipcode', 'bathrooms', 'beds'])
-
-# Impute median values for review_scores that are missing
-# airbnbDF['review_scores_rating'] = airbnbDF['review_scores_rating'].fillna(airbnbDF['review_scores_rating'].median())
-# airbnbDF['review_scores_accuracy'] = airbnbDF['review_scores_accuracy'].fillna(airbnbDF['review_scores_accuracy'].median())
-# airbnbDF['review_scores_cleanliness'] = airbnbDF['review_scores_cleanliness'].fillna(airbnbDF['review_scores_cleanliness'].median())
-# airbnbDF['review_scores_checkin'] = airbnbDF['review_scores_checkin'].fillna(airbnbDF['review_scores_checkin'].median())
-# airbnbDF['review_scores_communication'] = airbnbDF['review_scores_communication'].fillna(airbnbDF['review_scores_communication'].median())
-# airbnbDF['review_scores_location'] = airbnbDF['review_scores_location'].fillna(airbnbDF['review_scores_location'].median())
-# airbnbDF['review_scores_value'] = airbnbDF['review_scores_value'].fillna(airbnbDF['review_scores_value'].median())
-
-# COMMAND ----------
-
 # TODO
 # new model 
 from sklearn.ensemble import RandomForestRegressor
