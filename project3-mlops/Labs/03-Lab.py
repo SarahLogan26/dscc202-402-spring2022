@@ -94,12 +94,12 @@ name: Lab-03
 channels:
   - defaults
 dependencies:
-  - cloudpickle=0.5.3
-  - numpy=1.14.3
-  - pandas=0.23.0
-  - scikit-learn=0.19.1
+  - cloudpickle=1.6.0
+  - numpy=1.19.2
+  - pandas=1.2.4
+  - scikit-learn=0.24.1
   - pip:
-    - mlflow==1.0.0
+    - mlflow==1.20.2
 '''.strip())
 
 # COMMAND ----------
